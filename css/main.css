@@ -101,8 +101,15 @@ img, embed, object, video {
   media queries
 */
 @media only screen and (max-width: 350px){
-  h1 {font-size: 80%;}
-  h4 {font-size: 50%;}
+  .header-my-title {font-size: 80%;}
+  .figure-1-me {width: 200px;}
+}
+@media only screen and (min-width: 900px){
+  .section-questions {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*
@@ -149,23 +156,23 @@ img, embed, object, video {
 }
 .header-top-margin {
   margin-top: 5px;
+
 }
 .header-my-title {
-  margin-top: .15em;
-  padding-bottom: 0;
-  border-bottom: 0;
+  margin-top: 1px;
 }
 .header-my-name {
+  margin-top: 5px;
   margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: 0;
 }
+.section-questions {
 
+}
 /*
   Content
 */
-.content {
-
+.figure-1-me {
+  max-width: 100%;
 }
 
 /*
