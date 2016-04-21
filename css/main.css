@@ -1,3 +1,18 @@
+/* include borders, except margin, in size of box */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  -ms-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #747704;
@@ -8,27 +23,29 @@ img, embed, object, video {
   max-width: 100%;
 }
 
-* {
+.container {
   display: flex;
   flex-wrap: wrap;
 }
-nav a, button {
-  min-width: 48px;
-  min-height: 48px;
+
+.box {
+  max: 100%;
 }
 
-.hr-margin {
-  margin-top: 1px;
-  margin-bottom: 20px;
+.box-header-logo{
+  width: 25%;
 }
 
-.vacation-image-margin {
-   margin-bottom: 10px;
+.box-header-my-name {
+  width: 75%;
 }
 
 /*
   Classes to organize the content.
 */
+.logo {
+
+}
 .pix-of-me {
 
 }
@@ -81,35 +98,10 @@ nav a, button {
 }
 
 /*
-  I want to display a small image of the kids, one above the other. The images
-  wouldn't align properly at first. I googled until I found a solution. The
-  code below aligns the images vertically and leaves a space between them.
-  The name is very specific, primarily because of "margin-top". I doubt the
-  value of "margin-top" will be the same in each case.
-*/
-.vert-align-kids-pix {
-  display: block;
-}
-
-.vert-align-kids-pix-bottom {
-  margin-top: 2px;
-  vertical-align: bottom;
-}
-
-.portrait {
-  width: 100%;
-}
-
-.hr-margin {
-  margin-top: 1px;
-  margin-bottom: 20px;
-}
-
-/*
   media queries
 */
-@media only screen and (max-width: 400px){
-  h1 {font-size: 75%;}
+@media only screen and (max-width: 350px){
+  h1 {font-size: 80%;}
   h4 {font-size: 50%;}
 }
 
@@ -140,6 +132,10 @@ nav a, button {
 .text-subscript {
   font-size: .25em;
 }
+.text-underline {
+  text-decoration: underline;
+}
+
 .title-logo {
 
 }
@@ -185,83 +181,6 @@ nav a, button {
   padding-right: 0;
 }
 
-/*
-  box size definitions
-*/
-/* include borders, except margin, in size of box */
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  -ms-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-.flexible {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.row {
-  width: 100%;
-  margin: 0;
-}
-.col-md_1 {
-  width: 8%;
-  margin: 0;
-}
-.col-md-2 {
-  width: 16%;
-  margin: 0;
-}
-.col-md-3 {
-  width: 25%;
-  margin: 0;
-}
-.col-md-4 {
-  width: 33%;
-  margin: 0;
-}
-.col-md-5 {
-  width: 41%;
-  margin: 0;
-}
-.col-md-6 {
-  width: 50%;
-  margin: 0;
-}
-.col-md-7 {
-  width: 58%;
-  margin: 0;
-}
-.col-md-8 {
-  width: 67%;
-  margin: 0;
-}
-.col-md-9 {
-  width: 75%;
-  margin: 0;
-}
-.col-md-10 {
-  width: 83%;
-  margin: 0;
-}
-.col-md-11 {
-  width: 91%;
-  margin: 0;
-}
-.col-md-12 {
-  width: 100%;
-  margin: 0;
-}
-
-.box-align-right {
-}
 /*
   Debugging tools.
 */
