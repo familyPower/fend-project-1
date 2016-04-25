@@ -2,66 +2,91 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEND Project 1</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FEND Project 1</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <header>
-    <div class="container">
-        <div class="box-header-logo">
-            <img src="img/logo/udacitylogo.png" srcset="" alt="Udacity Logo">
-        </div>
-        <div class="box-header-my-name">
-            <h1 class="text-thin text-right text-muted header-my-name">Ansel Smith</h1>
-            <h4 class="text-uppercase text-thin text-muted text-right header-my-title">front-end ninja<span class="text-lowercase"> (coming soon)</span></h4>
-        </div>
+  <div class="container">
+    <div class="box_header_logo">
+      <img src="img/logo/udacitylogo.png" srcset="" alt="Udacity Logo">
     </div>
-    <div class="box">
-        <hr class="box"></hr>
+    <div class="box_header_my_name">
+      <h1 class="text_thin text_right text_muted header_my_name">Ansel Smith</h1>
+      <h4 class="text_uppercase text_thin text_muted text_right header_my_title">front-end ninja<span class="text_lowercase"> (coming soon)</span></h4>
     </div>
+  </div>
+  <!-- line under header -->
+  <div class="box">
+    <hr class="box"></hr>
+  </div>
 </header>
 
 <body>
-    <div class="container box">
-        <picture>
-            <figure class="figure-1-me debug-show-all-boundaries">
-                <img src="https://placehold.it/200x200" alt="Call me Smitty" class="figure-1-me"></a>
-                <figcaption class="text-subscript text-right">Figure 1 - Me</figcaption>
-            </figure>
+  <div class="container">
+    <div id="" class="box wrap_text big_enough">
+      <!-- <figure class="debug_show_all_boundaries"> -->
+        <picture class="wrap_text">
+          <source media="(min-width: 600px)" srcset="https://placehold.it/350x350">
+          <source media="(min-width: 450px)" srcset="https://placehold.it/250x250">
+          <img src="https://placehold.it/150x150" alt="Picture of Me.">
         </picture>
+        <!-- <figcaption>Figure-1: Me</figcaption> -->
+      <!-- </figure> -->
+      <div class="text_justify me_text">
+        This is a picture of me, unkempt and looking pretty rough. That's because I finally had a couple of consecutive days off and I've been working and studying most of the night.-------This is a picture of me, unkempt and looking pretty rough. That's because I finally had a couple of consecutive days off and I've been working and studying most of the night.
+      </div>
     </div>
+    <!--
+      <picture>
+        <source media="(min-width: 351px)" srcset="https://placehold.it/200x200" />
+        <source media="(min-width: 800px)" srcset="https://placehold.it/350x350" />
+        <img src="https://placehold.it/150x150">
+      </picture>
+      -->
+    <!-- <div class="me-text"> -->
+    <!-- </div> -->
 
-    <section class="section-questions">
-        <p id="id_p_questions">
-            <h3 id="id_p_questions" class="text-underline">Questions:</h3></p>
-        <p id="id_p_questions" class="">This sections has a set of questions I have about the project. The questions range from simple to complex.
-        </p>
-    </section>
+  <section class="section-questions big_enough">
+    <p id="id_p_questions">
+      <h3 id="id_p_questions" class="text_underline">Questions About the Project:</h3></p>
+    <p id="id_p_questions" class="">
+      I had trouble combining &ltfigure&gt with &ltpicture&gt, especially when I tried to align the caption to the bottom right of the image.
+      I found that the &ltfigure&gt and the &ltpicture&gt had separate boxes. I had trouble sizing them. Know of any examples doing this? I couldn't
+      find any on the web.
+    </p>
+  </section>
 
-    <section class="section-comments">
-        <p>
-            <h3 class="text-underline">Comments:</h3></p>
-        <p>Regarding the tutorials on <span class="text-underline">Responsive Patterns</span> - It would be nice to have a complete working example of each pattern, especially for those of us with virtually no experience in web programming.</p>
-    </section>
+  <section class="section-comments big_enough">
+    <p>
+      <h3 class="text_underline">Comments:</h3></p>
+    <p>Regarding the tutorials on <span class="text-underline">Responsive Patterns</span> - It would be nice to have a complete working example of each pattern, especially for those of us with virtually no experience in web programming.
+      It is surprisingly hard to find complete examples focusing on topics I'm trying to learn.
+    </p>
+    <p>There are a couple of items that I would have liked to improve on. For example, I would like less space between section heading (e.g. Comments) and text. I would also prefer more space between the picture of me and the text to it's
+      right. But I felt that I spent enough time on this project - I'm well over a month past the deadline; it's time to move on.
+    </p>
+  </section>
 
+</div>
 
-    <footer>
-        <figure>
-            <img src="https://placehold.it/350x350" alt="Picture 1"></a>
-            <figcaption class="text-subscript text-right">Fig1</figcaption>
-        </figure>
-        <figure>
-            <img src="https://placehold.it/350x350" alt="Picture 2"></a>
-            <figcaption class="text-subscript text-right">Fig2</figcaption>
-        </figure>
-        <figure>
-            <img src="https://placehold.it/350x350" alt="Picture 3"></a>
-            <figcaption class="text-subscript text-right">Fig3</figcaption>
-        </figure>
-    </footer>
+  <div class="big_enough">
+    <picture>
+      <img src="https://placehold.it/200x200" alt="Picture 1"></a>
+    </picture>
+    <picture>
+      <img src="https://placehold.it/200x200" alt="Picture 2"></a>
+    </picture>
+    <picture>
+      <img src="https://placehold.it/200x200" alt="Picture 3"></a>
+    </figure>
+  </div>
+
+  <footer>
+  </footer>
 
 </body>
