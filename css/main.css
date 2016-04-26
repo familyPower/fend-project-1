@@ -98,21 +98,32 @@ figure {
 */
 
 @media only screen and (max-width: 350px) {
-  .header-my-title {font-size: 80%;}
+  .header_my_title {font-size: 80%;}
 }
 @media only screen and (min-width: 900px) {
-  .section-questions {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .big_enough {
-    width: 800px;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
   }
 }
+@media only screen and (min-width: 760px) {
+  .bottom_image_container {
+    /*display: none;*/
 
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+}
+@media only screen and (min-width: 1062px) {
+  .bottom_image_container {
+    width: 1062px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /*
   Text transformations
@@ -188,10 +199,9 @@ figure {
 Bottom image
 */
 .bottom_image_container {
-  width: 100%;
+  max-width: 100%;
 }
 .bottom_image_centered {
-  display:flex;
   margin-left: auto;
   margin-right: auto;
 }
