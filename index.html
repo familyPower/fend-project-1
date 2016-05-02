@@ -13,7 +13,7 @@
 <header>
   <div class="container">
     <div class="box_header_logo">
-      <img src="img/logo/udacitylogo.png" srcset="" alt="Udacity Logo">
+      <img src="dist/logo/udacitylogo.png" srcset="" alt="Udacity Logo">
     </div>
     <div class="box_header_my_name">
       <h1 class="text_thin text_right text_muted header_my_name">Ansel Smith</h1>
@@ -30,11 +30,13 @@
   <div class="container">
     <div id="" class="box wrap_text big_enough">
       <!-- <figure class="debug_show_all_boundaries"> -->
-      <picture class="wrap_text">
-        <source media="(min-width: 600px)" srcset="https://placehold.it/350x350">
-        <source media="(min-width: 450px)" srcset="https://placehold.it/250x250">
-        <img src="https://placehold.it/150x150" alt="Picture of Me.">
-      </picture>
+      <div>
+        <picture class="wrap_text rotate90 me_picture me_picture_margin">
+           <source media="(min-width: 500px)" srcset="dist/me-medium.jpg">
+        <!-- <source media="(min-width: 450px)" srcset="dist/me-medium.jpg"> -->
+          <img src="dist/me-small.jpg" alt="Picture of Me.">
+        </picture>
+      </div>
       <!-- <figcaption>Figure-1: Me</figcaption> -->
       <!-- </figure> -->
       <div class="text_justify me_text">
@@ -56,10 +58,11 @@
       <p id="id_p_questions">
         <h3 id="id_p_questions" class="text_underline">Questions About the Project:</h3></p>
       <p id="id_p_questions" class="">
-        I had trouble combining &ltfigure&gt with &ltpicture&gt, especially when I tried to align the caption to the bottom right of the image. I found that the &ltfigure&gt and the &ltpicture&gt had separate boxes. I had trouble sizing them. Know of any examples
-        doing this? I couldn't find any on the web.
+        <p>I had trouble combining &ltfigure&gt with &ltpicture&gt, especially when I tried to align the caption to the bottom right of the image. I found that the &ltfigure&gt and the &ltpicture&gt had separate boxes. I also had trouble re-sizing the boxes.
+          Know of any examples doing this? I couldn't find any on the web.</p>
+        <p>I found that at least one picture was oriented incorrectly. I found that I could use css' transform to rotate the image. But I had to use "transform: rotate(45deg)". Why "45deg" instead of "90deg".</p>
       </p>
-      </section>
+    </section>
 
     <section class="section-comments big_enough">
       <p>
@@ -67,11 +70,13 @@
       <p>Regarding the tutorials on <span class="text-underline">Responsive Patterns</span> - It would be nice to have a complete working example of each pattern, especially for those of us with virtually no experience in web programming. It is surprisingly
         hard to find complete examples focusing on topics I'm trying to learn.
       </p>
-      <p>There are a couple of items that I would have liked to improve on. For example, I would like less space between section heading (e.g. Comments) and text. I would also prefer more space between the picture of me and the text to it's right. But I
-        felt that I spent enough time on this project - I'm well over a month past the deadline; it's time to move on.
+      <p>There are a couple of items that I wanted to improve. For example, I would like less space between section heading (e.g. Comments) and text. I would also prefer more space between the picture of me and the text to it's right. But I felt that I spent
+        enough time on this project - I'm well over a month past the deadline; it's time to move on.
       </p>
-      <p>There was a lot to learn, or at least become familiar with in this project - git, gulp, css, html, other unix tools (I'm come from a Windows world), responsive design, image manipulation, etc. It was fun, but it may have been a bit much to do in just one month.
+      <p>There was a lot to learn, or at least become familiar with in this project - git, gulp, css, html, other unix tools (I'm come from a Windows world), responsive design, image manipulation, etc. It was fun, but it may have been a bit much to do in
+        just one month.
       </p>
+      <p> I designed the application to operate responsively from a screen size of an iPhone 5 up to a desktop of arbitrary size.
     </section>
 
   </div>

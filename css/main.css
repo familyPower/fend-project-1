@@ -89,7 +89,7 @@ figure {
 
 }
 .me_text {
-  padding-left: 3px;
+  padding-left: 5px;
   padding-right: 3px;
 }
 
@@ -99,6 +99,11 @@ figure {
 
 @media only screen and (max-width: 350px) {
   .header_my_title {font-size: 80%;}
+}
+@media only screen and (min-width: 351px) {
+  .me_picture {
+    width:50%;
+  }
 }
 @media only screen and (min-width: 900px) {
   .big_enough {
@@ -196,6 +201,23 @@ figure {
 }
 
 /*
+  image of me
+*/
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.me_picture_margin {
+    margin-right: 5px;
+}
+.me_picture {
+  max-width: 100%;
+}
+
+/*
 Bottom image
 */
 .bottom_image_container {
@@ -228,4 +250,3 @@ Bottom image
 .debug_show_border {
   border: 1px solid blue !important;
 }
- bv
