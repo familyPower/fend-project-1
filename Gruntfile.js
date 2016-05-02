@@ -108,4 +108,6 @@ module.exports = function(grunt) {
   // npm install grunt-contrib-clean --save-dev
   // npm install grunt-mkdir --save-dev
   // npm install grunt-contrib-copy --save-dev
+  // npm install grunt-responsive-images --save-dev
+  // npm install grunt-contrib-uglify --save-dev
 };

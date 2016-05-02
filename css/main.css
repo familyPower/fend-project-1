@@ -45,7 +45,7 @@ figure {
 */
 
 .acknowledgments_style {
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 20px;
   margin-right: 5px;
   color: blue;
@@ -103,6 +103,13 @@ figure {
 @media only screen and (min-width: 351px) {
   .me_picture {
     width:50%;
+  }
+}
+@media only screen and (min-width: 430px) {
+  .acknowledgments_style {
+    width: 430px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media only screen and (min-width: 1062px) {
@@ -176,7 +183,10 @@ figure {
 .title_super {
   font-size: 60px;
 }
-
+.text_image_caption {
+  font-size: .20em;
+  margin-top: 0px;
+}
 /* header */
 
 .header_main {
