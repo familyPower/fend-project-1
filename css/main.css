@@ -38,12 +38,6 @@ figure {
 .box {
   width: 100%;
 }
-.box-header-logo {
-  width: 25%;
-}
-.box-header-my-name {
-  width: 75%;
-}
 
 /*
   The acknowledgement in the footer should be right aligned, italics,
@@ -70,6 +64,12 @@ figure {
 }
 
 /*
+  Header styling
+*/
+.header_text {
+  font-size: .75em;
+}
+/*
   Content
 */
 .wrap_text {
@@ -88,15 +88,15 @@ figure {
 .big_enough {
 
 }
-.me_text {
-  padding-left: 5px;
-  padding-right: 3px;
-}
 
 /*
   media queries
 */
-
+@media only screen and (max-width: 220px) {
+  .header_box_logo {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 350px) {
   .header_my_title {font-size: 80%;}
 }
@@ -183,7 +183,29 @@ figure {
 .header_my_name {
   margin-top: 5px;
   margin-bottom: 0;
+  margin-right: 5px;
 }
+.header_box_text {
+  max-width: 75%;
+}
+.header_box_logo {
+  max-width: 25%;
+}
+.me_text {
+  padding-left: 5px;
+  padding-right: 3px;
+}
+.box_header {
+  position:relative;
+}
+.box_header_logo {
+}
+.box_header_my_name {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
 .section_questions {}
 
 /*

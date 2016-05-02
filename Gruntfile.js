@@ -2,6 +2,23 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    clean: {
+      dist: ['dist/*']
+    },
+    mkdir: {
+      all: {
+        options: {
+          create: ['dist/logo']
+        },
+      },
+    },
+    copy: {
+      logo: {
+        expand: false,
+        src: 'img/logo/udacitylogo.png',
+        dest: 'dist/udacitylogo.png',
+      },
+    },
     concat: {
       options: {
         separator: ';'
@@ -23,17 +40,21 @@ module.exports = function(grunt) {
     },
     responsive_images: {
       dev: {
-        engine: 'gm',   //gm | im
+        engine: 'gm', //gm | im
         sizes: [{
           name: 'small',
-          width: 320,
+          width: 200,
           quality: 80
-          // height: 240
-        },{
+            // height: 240
+        }, {
           name: 'medium',
-          width: 640,
+          width: 350,
           quality: 80
-        },{
+        }, {
+          name: 'large',
+          width: 450,
+          quality: 80
+        }, {
           name: "large",
           width: 1024,
           separator: "-",
@@ -42,7 +63,7 @@ module.exports = function(grunt) {
         }],
         files: [{
           expand: true,
-          src: ['**/*.{jpg,gif,png,jpg,jpeg}'],
+          src: ['**/*.{jpg,gif,png,jpeg,JPG}'],
           cwd: 'images/',
           dest: 'dist/'
         }]
@@ -70,16 +91,27 @@ module.exports = function(grunt) {
     // }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   // grunt.loadNpmTasks('grunt-contrib-jshint');
   // grunt.loadNpmTasks('grunt-contrib-qunit');
   // grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-mkdir');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-responsive-images');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  // grunt.registerTask('test', ['jshint', 'qunit']);
   //
-  // grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
-  grunt.registerTask('default', ['concat', 'uglify', 'responsive_images']);
+  // has all tasks: grunt.registerTask('default', ['clean','mkdir',concat','uglify','responsive_images']);
+  grunt.registerTask('clean-up', ['clean']);
+  grunt.registerTask('make-logo-dir', ['mkdir']);
+  grunt.registerTask('copy-logo', ['copy']);
+  grunt.registerTask('responsive-pix', ['responsive_images']);
+  grunt.registerTask('default', ['clean', 'mkdir','copy','concat', 'uglify', 'responsive_images']);
 
+
+  // What to install
+  // npm install grunt-contrib-clean --save-dev
+  // npm install grunt-mkdir --save-dev
+  // npm install grunt-contrib-copy --save-dev
 };
