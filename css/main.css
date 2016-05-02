@@ -122,14 +122,14 @@ figure {
     width: 355px;
   }
 }
-@media only screen and (min-width: 1062px) {
+@media only screen and (min-width: 1096px) {
   .big_enough {
-    width: 1062px;
+    width: 1096px;
     margin-left: auto;
     margin-right: auto;
   }
   .bottom_image_container {
-    width: 1062px;
+    width: 1096px;
     margin-left: auto;
     margin-right: auto;
   }
