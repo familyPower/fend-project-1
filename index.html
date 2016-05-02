@@ -10,10 +10,11 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
+<body>
 <header>
   <div class="container box_header big_enough">
     <div class="header_box_logo">
-      <img src="dist/udacitylogo.png" srcset="" alt="Udacity Logo">
+      <img src="dist/udacitylogo.png" alt="Udacity Logo">
     </div>
     <div class="box_header_my_name header_text">
       <h1 class="text_thin text_right text_muted header_my_name">Ansel Smith</h1>
@@ -22,23 +23,20 @@
   </div>
   <!-- line under header -->
   <div class="box">
-    <hr class="box big_enough"></hr>
+    <hr class="box big_enough">
   </div>
 </header>
 
-<body>
+
   <div class="container">
-    <div id="" class="box wrap_text big_enough">
+    <div class="box wrap_text big_enough">
       <!-- <figure class="debug_show_all_boundaries"> -->
       <div>
         <picture class="wrap_text rotate90 me_picture me_picture_margin">
           <source media="(min-width: 500px)" srcset="dist/me-medium.jpg">
-          <!-- <source media="(min-width: 450px)" srcset="dist/me-medium.jpg"> -->
           <img src="dist/me-small.jpg" alt="Picture of Me.">
         </picture>
       </div>
-      <!-- <figcaption>Figure-1: Me</figcaption> -->
-      <!-- </figure> -->
       <div class="text_justify me_text">
         This is a picture of me, unkempt and looking pretty rough. That's because I finally had a couple of consecutive days off and I've been working and studying most of the night.-------This is a picture of me, unkempt and looking pretty rough. That's because
         I finally had a couple of consecutive days off and I've been working and studying most of the night.
@@ -46,18 +44,17 @@
     </div>
 
     <section class="section-questions big_enough">
-      <p id="id_p_questions">
-        <h3 id="id_p_questions" class="text_underline">Questions About the Project:</h3></p>
-      <p id="id_p_questions" class="">
-        <p>I had trouble combining &ltfigure&gt with &ltpicture&gt, especially when I tried to align the caption to the bottom right of the image. I found that the &ltfigure&gt and the &ltpicture&gt had separate boxes. I also had trouble re-sizing the boxes.
-          Know of any examples doing this? I couldn't find any on the web.</p>
-        <p>I found that at least one picture was oriented incorrectly. I found that I could use css' transform to rotate the image. But I had to use "transform: rotate(45deg)". Why "45deg" instead of "90deg".</p>
-      </p>
+
+      <h4 class="text_underline">Questions About the Project:</h4>
+        <p>I had trouble combining &lt;figure&gt; with &lt;picture&gt;, especially when I tried to align the caption to the bottom right of the image. I found that the &lt;figure&gt; and the &lt;picture&gt; had separate boxes. I also had trouble re-sizing the boxes.
+          Know of any examples doing this? I couldn't find any on the web.
+        </p>
+        <p>I found that at least one picture was oriented incorrectly. I found that I could use css' transform to rotate the image. But I had to use "transform: rotate(45deg)". Why "45deg" instead of "90deg".
+        </p>
     </section>
 
     <section class="section-comments big_enough">
-      <p>
-        <h3 class="text_underline">Comments:</h3></p>
+      <h4 class="text_underline">Comments:</h4>
       <p>Regarding the tutorials on <span class="text-underline">Responsive Patterns</span> - It would be nice to have a complete working example of each pattern, especially for those of us with virtually no experience in web programming. It is surprisingly
         hard to find complete examples focusing on topics I'm trying to learn.
       </p>
@@ -79,7 +76,7 @@
         <source media="(min-width: 740px)" srcset="dist/isaiah-medium.jpg">
         <source media="(min-width: 500px)" srcset="dist/isaiah-large.jpg">
         <source media="(min-width: 425px)" srcset="dist/isaiah-medium.jpg">
-        <img class="" src="dist/isaiah-small.jpg" alt="Picture of the son"></a>
+        <img class="" src="dist/isaiah-small.jpg" alt="Picture of the son">
       </picture>
       <!-- <div class="image_caption"> -->
       <h4 class="text_image_caption text_right">Isaiah: The Son</h4>
@@ -91,9 +88,9 @@
         <source media="(min-width: 740px)" srcset="dist/maria-medium.jpg">
         <source media="(min-width: 500px)" srcset="dist/maria-large.jpg">
         <source media="(min-width: 425px)" srcset="dist/maria-medium.jpg">
-        <img class="" src="dist/maria-small.jpg" alt="Picture of the daughter"></a>
-        <h4 class="text_image_caption text_right">Maria: The Daughter</h4>
+        <img class="" src="dist/maria-small.jpg" alt="Picture of the daughter">
       </picture>
+      <h4 class="text_image_caption text_right">Maria: The Daughter</h4>
     </div>
     <div class="bottom_image bottom_image_centered">
       <picture class="">
@@ -101,9 +98,9 @@
         <source media="(min-width: 740px)" srcset="dist/odie-medium.jpg">
         <source media="(min-width: 500px)" srcset="dist/odie-large.jpg">
         <source media="(min-width: 425px)" srcset="dist/odie-medium.jpg">
-        <img class="" src="dist/odie-small.jpg" alt="Picture of the dog"></a>
-        <h4 class="text_image_caption text_right">Odie: The Dog</h4>
+        <img class="" src="dist/odie-small.jpg" alt="Picture of the dog">
       </picture>
+      <h4 class="text_image_caption text_right">Odie: The Dog</h4>
     </div>
     <div class="bottom_image bottom_image_centered">
       <picture class="">
@@ -111,9 +108,9 @@
         <source media="(min-width: 740px)" srcset="dist/kiki-medium.jpg">
         <source media="(min-width: 500px)" srcset="dist/kiki-large.jpg">
         <source media="(min-width: 425px)" srcset="dist/kiki-medium.jpg">
-        <img class="" src="dist/kiki-small.jpg" alt="Picture of the cat"></a>
-        <h4 class="text_image_caption text_right">Kiki: The Cat</h4>
+        <img class="" src="dist/kiki-small.jpg" alt="Picture of the cat">
       </picture>
+      <h4 class="text_image_caption text_right">Kiki: The Cat</h4>
     </div>
   </div>
 
