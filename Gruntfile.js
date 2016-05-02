@@ -54,12 +54,6 @@ module.exports = function(grunt) {
           name: 'large',
           width: 450,
           quality: 80
-        }, {
-          name: "large",
-          width: 1024,
-          separator: "-",
-          suffix: "_x2",
-          quality: 60
         }],
         files: [{
           expand: true,
