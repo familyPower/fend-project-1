@@ -1,15 +1,9 @@
 /* include borders, except margin, in size of box */
 
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  -ms-box-sizing: inherit;
   box-sizing: inherit;
 }
 body {
@@ -66,12 +60,15 @@ figure {
 /*
   Header styling
 */
+
 .header_text {
   font-size: .75em;
 }
+
 /*
   Content
 */
+
 .wrap_text {
   float: left;
 }
@@ -83,26 +80,27 @@ figure {
 }
 .div_figure_me_boundary {
   width: 50%;
-  height: 105;
+  height: 105px;
 }
-.big_enough {
-
-}
+.big_enough {}
 
 /*
   media queries
 */
+
 @media only screen and (max-width: 220px) {
   .header_box_logo {
     width: 100%;
   }
 }
 @media only screen and (max-width: 350px) {
-  .header_my_title {font-size: 80%;}
+  .header_my_title {
+    font-size: 80%;
+  }
 }
 @media only screen and (min-width: 351px) {
   .me_picture {
-    width:50%;
+    width: 50%;
   }
 }
 @media only screen and (min-width: 430px) {
@@ -113,14 +111,11 @@ figure {
   }
 }
 @media only screen and (min-width: 1062px) {
-  .bottom_image {
-
-  }
+  .bottom_image {}
 }
 @media only screen and (min-width: 760px) {
   .bottom_image_container {
     /*display: none;*/
-
     width: 750px;
     margin-left: auto;
     margin-right: auto;
@@ -187,6 +182,7 @@ figure {
   font-size: .20em;
   margin-top: 0px;
 }
+
 /* header */
 
 .header_main {
@@ -214,16 +210,14 @@ figure {
   padding-right: 3px;
 }
 .box_header {
-  position:relative;
+  position: relative;
 }
-.box_header_logo {
-}
+.box_header_logo {}
 .box_header_my_name {
   position: absolute;
   top: 0px;
   right: 0px;
 }
-
 .section_questions {}
 
 /*
@@ -243,15 +237,12 @@ figure {
 /*
   image of me
 */
+
 .rotate90 {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .me_picture_margin {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 .me_picture {
   max-width: 100%;
@@ -260,6 +251,7 @@ figure {
 /*
 Bottom image
 */
+
 .bottom_image_container {
   max-width: 100%;
 }
@@ -268,8 +260,8 @@ Bottom image
   margin-right: auto;
 }
 .bottom_image_layout {
-    display : block;
-    margin : auto;
+  display: block;
+  margin: auto;
 }
 
 /*
@@ -277,16 +269,6 @@ Bottom image
 */
 
 .debug_show_all_boundaries {
-  border: 1px solid blue !important;
-  padding: 1px solid green !important;
-  margin: 1px solid red !important;
-}
-.debug_show_margins {
-  margin: 1px solid red !important;
-}
-.debug_show_padding {
-  padding: 1px solid green !important;
-}
-.debug_show_border {
-  border: 1px solid blue !important;
+  border: 1px;
+  border-color: blue;
 }
