@@ -31,23 +31,14 @@ img, embed, object, video {
   margin-right: 5px;
   color: blue;
 }
+
 .acknowledgments_item_style {
   color: green;
 }
 
 /*
-  This class is for the images of the kids. These images are right beside the
-  image of me.
-*/
-
-.thumbnail_img {
-  max-width: 135px;
-}
-
-/*
   Header styling
 */
-
 .header_text {
   font-size: .75em;
 }
@@ -55,20 +46,22 @@ img, embed, object, video {
 /*
   Content
 */
-
 .wrap_text {
   float: left;
 }
+
 .img_1_me_boundary {
   width: 50%;
   margin-top: 0;
   margin-left: 0;
   margin-right: 3px;
 }
+
 .div_figure_me_boundary {
   width: 50%;
   height: 105px;
 }
+
 .big_enough {}
 
 /*
@@ -80,11 +73,13 @@ img, embed, object, video {
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 350px) {
   .header_my_title {
     font-size: 80%;
   }
 }
+
 @media only screen and (min-width: 351px) {
   .me_picture {
     width: 50%;
@@ -93,6 +88,7 @@ img, embed, object, video {
     font-size: 20px;
   }
 }
+
 @media only screen and (min-width: 430px) {
   .acknowledgments_style {
     width: 430px;
@@ -100,6 +96,7 @@ img, embed, object, video {
     margin-right: auto;
   }
 }
+
 @media only screen and (min-width: 760px) {
   .bottom_image_container {
     /*display: none;*/
@@ -111,6 +108,7 @@ img, embed, object, video {
     width: 355px;
   }
 }
+
 @media only screen and (min-width: 1096px) {
   .big_enough {
     width: 1096px;
@@ -130,41 +128,51 @@ img, embed, object, video {
 /*
   Text transformations
 */
-
 .text_uppercase {
   text-transform: uppercase;
 }
+
 .text_lowercase {
   text-transform: lowercase;
 }
+
 .text_capitalize {
   text-transform: capitalize;
 }
+
 .text_right {
   text-align: right;
 }
+
 .text_left {
   text-align: left;
 }
+
 .text_muted {
   color: #BCBBBB
 }
+
 .text_thin {
   font-weight: 100;
 }
+
 .text_subscript {
   font-size: .25em;
 }
+
 .text_underline {
   text-decoration: underline;
 }
+
 .text_justify {
   text-align: justify;
 }
+
 .title_logo {}
 .title_super {
   font-size: 60px;
 }
+
 .text_image_caption {
   font-size: .20em;
   margin-top: 0px;
@@ -175,46 +183,59 @@ img, embed, object, video {
 .header_main {
   width: 100%;
 }
+
 .header_top_margin {
   margin-top: 5px;
 }
+
 .header_my_title {
   margin-top: 1px;
 }
+
 .header_my_name {
   margin-top: 5px;
   margin-bottom: 0;
   margin-right: 5px;
 }
+
 .header_box_text {
   max-width: 75%;
 }
+
 .header_box_logo {
   max-width: 25%;
 }
+
 .me_text {
   padding-left: 5px;
   padding-right: 3px;
 }
+
 .box_header {
   position: relative;
 }
+
 .box_header_logo {}
 .box_header_my_name {
   position: absolute;
   top: 0px;
   right: 0px;
 }
-.section_questions {}
+
+.section_questions {
+}
+
+.section_comments {
+}
 
 /*
 */
-
 .flush_left {
   border-left: 0;
   margin-left: 0;
   padding-left: 0;
 }
+
 .flush_right {
   border-right: 0;
   margin-right: 0;
@@ -224,13 +245,15 @@ img, embed, object, video {
 /*
   image of me
 */
-
 .rotate90 {
   transform: rotate(90deg);
 }
+
 .me_picture_margin {
   margin-right: 5px;
+  margin-bottom: 20px;
 }
+
 .me_picture {
   max-width: 100%;
 }
@@ -238,14 +261,15 @@ img, embed, object, video {
 /*
 Bottom image
 */
-
 .bottom_image_container {
   max-width: 100%;
 }
+
 .bottom_image_centered {
   margin-left: auto;
   margin-right: auto;
 }
+
 .bottom_image_layout {
   display: block;
   margin: auto;
@@ -258,6 +282,7 @@ Bottom image
 .menu_item {
   font-size: 12px;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -265,9 +290,11 @@ ul {
   overflow: hidden;
   background-color: #BDBDBD;
 }
+
 li {
   float: left;
 }
+
 li a, .dropbtn {
   display: inline-block;
   color: white;
@@ -275,12 +302,15 @@ li a, .dropbtn {
   padding: 14px 16px;
   text-decoration: none;
 }
+
 li a:hover, .dropdown:hover .dropbtn {
   background-color: LightSkyBlue;
 }
+
 li.dropdown {
   display: inline-block;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -288,6 +318,7 @@ li.dropdown {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -295,12 +326,16 @@ li.dropdown {
   display: block;
   text-align: left;
 }
+
 .dropdown-content a:hover {
   background-color: #f1f1f1
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
+
 }
+
 #zorderfix {
   position: relative;
   z-index: 1000;
@@ -309,7 +344,6 @@ li.dropdown {
 /*
   Debugging tools.
 */
-
 .debug_show_all_boundaries {
   border: 1px solid blue;
 }
