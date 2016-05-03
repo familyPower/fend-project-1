@@ -101,7 +101,7 @@ module.exports = function(grunt) {
   grunt.registerTask('make-logo-dir', ['mkdir']);
   grunt.registerTask('copy-logo', ['copy']);
   grunt.registerTask('responsive-pix', ['responsive_images']);
-  grunt.registerTask('default', ['clean', 'mkdir','copy','concat', 'uglify', 'responsive_images']);
+  grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'concat', 'uglify', 'responsive_images']);
 
 
   // What to install
