@@ -10,167 +10,175 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-  <body class="container big_enough">
-    <header class="box_header">
-      <div class="header_box_logo">
-        <img src="dist/udacitylogo.png" alt="Udacity Logo">
-      </div>
-      <div class="header_text box_header_my_name">
-        <h1 class="text_thin text_right text_muted header_my_name">Ansel Smith</h1>
-        <h4 class="text_uppercase text_thin text_muted text_right header_my_title">front-end ninja<span class="text_lowercase"> (coming soon)</span></h4>
-      </div>
-
-      <!-- navbar -->
-      <!-- navbar code copied from w3schools.com -->
-      <!-- Dropdown was hidden behind image. Found solution at coffeecup.com. -->
-      <div id="zorderfix">
-        <ul>
-          <li><a class="active menu_item" href="#home">Resume</a></li>
-          <li><a class="menu_item" href="#news">About Me</a></li>
-          <li class="dropdown menu_item">
-            <a href="#" class="dropbtn">More</a>
-            <div class="dropdown-content">
-              <a href="#">My Family</a>
-              <a href="#">Disney Vacation Pix</a>
-              <a href="#">FAQs</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <!-- line under header -->
-      <div class="box">
-        <hr class="box">
-      </div>
-    </header>
-
-    <div class="box wrap_text">
-      <div class="wrap_text rotate90 me_picture me_picture_margin">
-        <picture>
-          <source media="(min-width: 500px)" srcset="dist/me-medium.jpg">
-          <img src="dist/me-small.jpg" alt="Picture of Me.">
-        </picture>
-      </div>
-      <div class="text_justify me_text">
-        This is a picture of me, unkempt and looking pretty rough. That's because I finally had a couple of consecutive days off and I've been working and studying most of the night.-------This is a picture of me, unkempt and looking pretty rough. That's because
-        I finally had a couple of consecutive days off and I've been working and studying most of the night.
-      </div>
+<body class="container big_enough">
+  <header class="box_header">
+    <div class="header_box_logo">
+      <img src="dist/udacitylogo.png" alt="Udacity Logo">
+    </div>
+    <div class="header_text box_header_my_name">
+      <h1 class="text_thin text_right text_muted header_my_name">Ansel Smith</h1>
+      <h4 class="text_uppercase text_thin text_muted text_right header_my_title">front-end ninja<span class="text_lowercase"> (coming soon)</span></h4>
     </div>
 
-    <section class="section_questions">
-      <h4 class="text_underline">Questions About the Project:</h4>
-      <p>I had trouble combining &lt;figure&gt; with &lt;picture&gt;, especially when I tried to align the caption to the bottom right of the image. I found that the &lt;figure&gt; and the &lt;picture&gt; had separate boxes. I also had trouble re-sizing
-        the boxes. Know of any examples doing this? I couldn't find any on the web.
-      </p>
-      <p>I found that at least one picture was oriented incorrectly. I found that I could use css' transform to rotate the image. But I had to use "transform: rotate(45deg)". Why "45deg" instead of "90deg".
-      </p>
-      <p>I had to include and outer most &lt;div&gt;. I'm not sure why, when I removed it (I don't think it should be needed), the header doesn't isn't responsive, at least not correctly. Any idea why? You can see the issue by removing the outer most &lt;div&gt;
-        and shrinking the viewport to the size of a phone.
-      </p>
-      <p>How do I reposition the dropdown so that the right-side is aligned when the screen is small - phone size viewport. When the screen is small, long menu items in the dropdown fall off the screen.
-    </section>
-
-    <section class="section-comments">
-      <h4 class="text_underline">Comments:</h4>
-      <p>Regarding the tutorials on <span class="text-underline">Responsive Patterns</span> - It would be nice to have a complete working example of each pattern, especially for those of us with virtually no experience in web programming. It is surprisingly
-        hard to find complete examples focusing on topics I'm trying to learn.
-      </p>
-      <p>There are a couple of items that I wanted to improve. For example, I would like less space between section heading (e.g. Comments) and text. I would also prefer more space between the picture of me and the text to it's right. But I felt that I spent
-        enough time on this project - I'm well over a month past the deadline; it's time to move on.
-      </p>
-      <p>There was a lot to learn, or at least become familiar with in this project - git, gulp, css, html, other unix tools (I'm come from a Windows world), responsive design, image manipulation, etc. It was fun, but it may have been a bit much to do in
-        just one month.
-      </p>
-      <p> I designed the application to operate responsively from a screen size of an iPhone 5,about 220 pixels wide, up to a desktop of arbitrary size.
-    </section>
-
-    <div class="bottom_image_container container">
-      <div class="bottom_image bottom_image_centered">
-        <picture>
-          <source media="(min-width: 1062px)" srcset="dist/isaiah-small.jpg">
-          <source media="(min-width: 740px)" srcset="dist/isaiah-medium.jpg">
-          <source media="(min-width: 500px)" srcset="dist/isaiah-large.jpg">
-          <source media="(min-width: 425px)" srcset="dist/isaiah-medium.jpg">
-          <img class="" src="dist/isaiah-small.jpg" alt="Picture of the son">
-        </picture>
-        <h4 class="text_image_caption text_right">Isaiah: The Son</h4>
-      </div>
-      <div class="bottom_image bottom_image_centered">
-        <picture>
-          <source media="(min-width: 1062px)" srcset="dist/maria-small.jpg">
-          <source media="(min-width: 740px)" srcset="dist/maria-medium.jpg">
-          <source media="(min-width: 500px)" srcset="dist/maria-large.jpg">
-          <source media="(min-width: 425px)" srcset="dist/maria-medium.jpg">
-          <img class="" src="dist/maria-small.jpg" alt="Picture of the daughter">
-        </picture>
-        <h4 class="text_image_caption text_right">Maria: The Daughter</h4>
-      </div>
-      <div class="bottom_image bottom_image_centered">
-        <picture class="">
-          <source media="(min-width: 1062px)" srcset="dist/odie-small.jpg">
-          <source media="(min-width: 740px)" srcset="dist/odie-medium.jpg">
-          <source media="(min-width: 500px)" srcset="dist/odie-large.jpg">
-          <source media="(min-width: 425px)" srcset="dist/odie-medium.jpg">
-          <img class="" src="dist/odie-small.jpg" alt="Picture of the dog">
-        </picture>
-        <h4 class="text_image_caption text_right">Odie: The Dog</h4>
-      </div>
-      <div class="bottom_image bottom_image_centered">
-        <picture>
-          <source media="(min-width: 1062px)" srcset="dist/kiki-small.jpg">
-          <source media="(min-width: 740px)" srcset="dist/kiki-medium.jpg">
-          <source media="(min-width: 500px)" srcset="dist/kiki-large.jpg">
-          <source media="(min-width: 425px)" srcset="dist/kiki-medium.jpg">
-          <img class="" src="dist/kiki-small.jpg" alt="Picture of the cat">
-        </picture>
-        <h4 class="text_image_caption text_right">Kiki: The Cat</h4>
-      </div>
+    <!-- navbar -->
+    <!-- navbar code copied from w3schools.com -->
+    <!-- Dropdown was hidden behind image. Found solution at coffeecup.com. -->
+    <div id="zorderfix">
+      <ul>
+        <li><a class="active menu_item" href="#home">Resume</a></li>
+        <li><a class="menu_item" href="#news">About Me</a></li>
+        <li class="dropdown menu_item">
+          <a href="#" class="dropbtn">More</a>
+          <div class="dropdown-content">
+            <a href="#">My Family</a>
+            <a href="#">Disney Vacation Pix</a>
+            <a href="#">FAQs</a>
+          </div>
+        </li>
+      </ul>
     </div>
 
-    <footer class="big_enough">
-      Acknowledgement: I used a large number of websites to gain the knowledge to create this website. They include, but definitely not limited to:
-      <div class="row">
-        <table class="acknowledgments_style">
-          <tr>
-            <td><a href="https://github.com">github</a></td>
-            <td>Information and documentation for git/github</td>
-          </tr>
-          <tr>
-            <td><a href="https://gruntjs.com">grunt</a></td>
-            <td>All about Grunt</td>
-          </tr>
-          <tr>
-            <td><a href="https://css-tricks.com">css</a></td>
-            <td>Tips for using css</td>
-          </tr>
-          <tr>
-            <td><a href="https://responsiveimages.org/">responsive images</a></td>
-            <td>Information and tips for creating responsive images</td>
-          </tr>
-          <tr>
-            <td><a href="http://www.frontendwebhelp.com/">Front End</a></td>
-            <td>Useful information about front end development</td>
-          </tr>
-          <tr>
-            <td><a href="https://developer.mozilla.org">developer.mozilla</a></td>
-            <td>All about web development</td>
-          </tr>
-          <tr>
-            <td><a href="http://www.w3schools.com/">w3schools</a></td>
-            <td>Many tutorials about different development topics.</td>
-          </tr>
-          <tr>
-            <td><a href="http://stackoverflow.com/">stackoverflow</a></td>
-            <td>Problems resolved!</td>
-          </tr>
-          <tr>
-            <td><a href="http://www.coffeecup.com/">coffeecup.com</a></td>
-            <td>Software and Web Design Forums and found solution for dropdown menu hiding behind image.</td>
-          </tr>
-        </table>
-      </div>
-      <p>These are very small number of the many, possibly hundreds, of sites I owe a "Thank you".</p>
-    </footer>
+    <!-- line under header -->
+    <div class="box">
+      <hr class="box">
+    </div>
+  </header>
 
-  </body>
+  <div class="box wrap_text">
+    <div class="wrap_text rotate90 me_picture me_picture_margin">
+      <picture>
+        <source media="(min-width: 500px)" srcset="dist/me-medium.jpg">
+        <img src="dist/me-small.jpg" alt="Picture of Me.">
+      </picture>
+    </div>
+    <div class="text_justify me_text">
+      This is a picture of me, unkempt and looking pretty rough. That's because I finally had a couple of consecutive days off and I've been working and studying most of the night.-------This is a picture of me, unkempt and looking pretty rough. That's because
+      I finally had a couple of consecutive days off and I've been working and studying most of the night.
+    </div>
+  </div>
+
+  <section class="section_questions">
+    <h4 class="text_underline">Questions About the Project:</h4>
+    <p>I had trouble combining &lt;figure&gt; with &lt;picture&gt;, especially when I tried to align the caption to the bottom right of the image. I found that the &lt;figure&gt; and the &lt;picture&gt; had separate boxes. I also had trouble re-sizing the
+      boxes. Know of any examples doing this? I couldn't find any on the web.
+    </p>
+    <p>I found that at least one picture was oriented incorrectly. I found that I could use css' transform to rotate the image. But I had to use "transform: rotate(45deg)". Why "45deg" instead of "90deg".
+    </p>
+    <p>I had to include and outer most &lt;div&gt;. I'm not sure why, when I removed it (I don't think it should be needed), the header doesn't isn't responsive, at least not correctly. Any idea why? You can see the issue by removing the outer most &lt;div&gt;
+      and shrinking the viewport to the size of a phone.
+    </p>
+    <p>How do I reposition the dropdown so that the right-side is aligned when the screen is small - phone size viewport. When the screen is small, long menu items in the dropdown fall off the screen.
+  </section>
+
+  <section class="section-comments">
+    <h4 class="text_underline">Comments:</h4>
+    <p>Regarding the tutorials on <span class="text-underline">Responsive Patterns</span> - It would be nice to have a complete working example of each pattern, especially for those of us with virtually no experience in web programming. It is surprisingly
+      hard to find complete examples focusing on topics I'm trying to learn.
+    </p>
+    <p>There are a couple of items that I wanted to improve. For example, I would like less space between section heading (e.g. Comments) and text. I would also prefer more space between the picture of me and the text to it's right. But I felt that I spent
+      enough time on this project - I'm well over a month past the deadline; it's time to move on.
+    </p>
+    <p>There was a lot to learn, or at least become familiar with in this project - git, gulp, css, html, other unix tools (I'm come from a Windows world), responsive design, image manipulation, etc. It was fun, but it may have been a bit much to do in just
+      one month.
+    </p>
+    <p> I designed the application to operate responsively from a screen size of an iPhone 5,about 220 pixels wide, up to a desktop of arbitrary size.
+  </section>
+
+  <div class="bottom_image_container container">
+    <div class="bottom_image bottom_image_centered">
+      <picture>
+        <source media="(min-width: 1062px)" srcset="dist/isaiah-small.jpg">
+        <source media="(min-width: 740px)" srcset="dist/isaiah-medium.jpg">
+        <source media="(min-width: 500px)" srcset="dist/isaiah-large.jpg">
+        <source media="(min-width: 425px)" srcset="dist/isaiah-medium.jpg">
+        <img class="" src="dist/isaiah-small.jpg" alt="Picture of the son">
+      </picture>
+      <h4 class="text_image_caption text_right">Isaiah: The Son</h4>
+    </div>
+    <div class="bottom_image bottom_image_centered">
+      <picture>
+        <source media="(min-width: 1062px)" srcset="dist/maria-small.jpg">
+        <source media="(min-width: 740px)" srcset="dist/maria-medium.jpg">
+        <source media="(min-width: 500px)" srcset="dist/maria-large.jpg">
+        <source media="(min-width: 425px)" srcset="dist/maria-medium.jpg">
+        <img class="" src="dist/maria-small.jpg" alt="Picture of the daughter">
+      </picture>
+      <h4 class="text_image_caption text_right">Maria: The Daughter</h4>
+    </div>
+    <div class="bottom_image bottom_image_centered">
+      <picture class="">
+        <source media="(min-width: 1062px)" srcset="dist/odie-small.jpg">
+        <source media="(min-width: 740px)" srcset="dist/odie-medium.jpg">
+        <source media="(min-width: 500px)" srcset="dist/odie-large.jpg">
+        <source media="(min-width: 425px)" srcset="dist/odie-medium.jpg">
+        <img class="" src="dist/odie-small.jpg" alt="Picture of the dog">
+      </picture>
+      <h4 class="text_image_caption text_right">Odie: The Dog</h4>
+    </div>
+    <div class="bottom_image bottom_image_centered">
+      <picture>
+        <source media="(min-width: 1062px)" srcset="dist/kiki-small.jpg">
+        <source media="(min-width: 740px)" srcset="dist/kiki-medium.jpg">
+        <source media="(min-width: 500px)" srcset="dist/kiki-large.jpg">
+        <source media="(min-width: 425px)" srcset="dist/kiki-medium.jpg">
+        <img class="" src="dist/kiki-small.jpg" alt="Picture of the cat">
+      </picture>
+      <h4 class="text_image_caption text_right">Kiki: The Cat</h4>
+    </div>
+  </div>
+
+  <footer class="big_enough">
+    Acknowledgement: I used a large number of websites to gain the knowledge to create this website. They include, but definitely not limited to:
+    <div class="row">
+      <table class="acknowledgments_style">
+        <tr>
+          <td><a href="https://github.com">github</a></td>
+          <td>Information and documentation for git/github</td>
+        </tr>
+        <tr>
+          <td><a href="https://gruntjs.com">grunt</a></td>
+          <td>All about Grunt</td>
+        </tr>
+        <tr>
+          <td><a href="https://css-tricks.com">css</a></td>
+          <td>Tips for using css</td>
+        </tr>
+        <tr>
+          <td><a href="https://responsiveimages.org/">responsive images</a></td>
+          <td>Information and tips for creating responsive images</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.frontendwebhelp.com/">Front End</a></td>
+          <td>Useful information about front end development</td>
+        </tr>
+        <tr>
+          <td><a href="https://developer.mozilla.org">developer.mozilla</a></td>
+          <td>All about web development</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.w3schools.com/">w3schools</a></td>
+          <td>Many tutorials about different development topics.</td>
+        </tr>
+        <tr>
+          <td><a href="http://stackoverflow.com/">stackoverflow</a></td>
+          <td>Problems resolved!</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.coffeecup.com/">coffeecup.com</a></td>
+          <td>Software and Web Design Forums and found solution for dropdown menu hiding behind image.</td>
+        </tr>
+      </table>
+    </div>
+    <p>These are very small number of the many, possibly hundreds, of sites I owe a "Thank you".</p>
+  </footer>
+
+  <!--  Passed CSS-3 validation -->
+  <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+    </a>
+  </p>
+
+</body>
+
 </html>
